@@ -185,13 +185,13 @@
     </index>
    </folder>
   </table>
-  <table id="TAB51" populated="true" UUID="d3e263a3-26f7-422f-8c35-f1536cc49f95" name="ESTOQUE" objectType="TABLE" physicalName="ESTOQUE" >
+  <table id="TAB51" populated="true" UUID="b47123de-660a-4570-9332-47bccb71fcf4" name="ESTOQUE" objectType="TABLE" physicalName="ESTOQUE" >
    <remarks></remarks>
    <folder id="FOLTAB511" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL52" populated="true" UUID="93c1a874-4bb4-45ff-9c0f-cf4789374e40" autoIncrement="false" autoIncrementSequenceName="roupas_cod_produto_seq" defaultValue="" name="COD_produto" nullable="0" physicalName="cod_produto" precision="14" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL52" populated="true" UUID="65c1ef14-528e-4c80-aa6a-3d6eff36aa4e" autoIncrement="false" autoIncrementSequenceName="roupas_cod_produto_seq" defaultValue="" name="COD_produto" nullable="0" physicalName="cod_produto" precision="14" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL53" populated="true" UUID="df5f4444-8450-4598-ac21-206f9f72c49c" autoIncrement="false" autoIncrementSequenceName="ESTOQUE_quantidade_seq" defaultValue="" name="quantidade" nullable="0" physicalName="quantidade" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL53" populated="true" UUID="02354e1a-7dd6-4a13-8b5a-68c772d0fb3e" autoIncrement="false" autoIncrementSequenceName="ESTOQUE_Quantidade_seq" defaultValue="" name="Quantidade" nullable="0" physicalName="Quantidade" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
      <remarks></remarks>
     </column>
     </folder>
@@ -200,8 +200,8 @@
     <folder id="FOLTAB512" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB514" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX54" populated="true" UUID="12d9fd5c-5eec-41f4-86a9-52e4d05df39d" clustered="false" name="ESTOQUE_pk" physicalName="ESTOQUE_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC55" populated="true" UUID="2d2c00ce-ff59-4a1e-96ce-e350082dcc71" ascendingOrDescending="UNSPECIFIED" column-ref="COL52" name="COD_produto" physicalName="cod_produto" />
+    <index id="IDX54" populated="true" UUID="15f6a474-94b1-42ce-bcf2-ae9df1605f54" clustered="false" name="ESTOQUE_pk" physicalName="ESTOQUE_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC55" populated="true" UUID="4dfe55ea-1b9c-4dbd-a2b1-199835e53a85" ascendingOrDescending="UNSPECIFIED" column-ref="COL52" name="COD_produto" physicalName="cod_produto" />
     </index>
    </folder>
   </table>
@@ -212,8 +212,8 @@
    <relationship id="REL58" populated="true" UUID="8f28642f-0667-4b14-afff-619412e9a56c" deferrability="7" deleteRule="3" fk-table-ref="TAB42" fkCardinality="6" identifying="false" name="roupas_item_pedido_fk" physicalName="roupas_item_pedido_fk" pk-table-ref="TAB14" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP59" populated="true" UUID="b98db89b-dbc6-4c5d-a1a9-73f65887dd84" fk-column-ref="COL48" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL15" />
    </relationship>
-   <relationship id="REL60" populated="true" UUID="4761a365-3447-40c4-96bc-a2ed1abe33b1" deferrability="7" deleteRule="3" fk-table-ref="TAB51" fkCardinality="3" identifying="true" name="roupas_ESTOQUE_fk" physicalName="roupas_ESTOQUE_fk" pk-table-ref="TAB14" pkCardinality="6" updateRule="3" >
-    <column-mapping id="CMP61" populated="true" UUID="ac73c9b2-fec8-48a1-b2bf-d84a9a94e73e" fk-column-ref="COL52" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL15" />
+   <relationship id="REL60" populated="true" UUID="26228271-f24c-4159-b8d3-bc4fe29d36ad" deferrability="7" deleteRule="3" fk-table-ref="TAB51" fkCardinality="3" identifying="true" name="roupas_ESTOQUE_fk" physicalName="roupas_ESTOQUE_fk" pk-table-ref="TAB14" pkCardinality="6" updateRule="3" >
+    <column-mapping id="CMP61" populated="true" UUID="d1a633f1-1c69-4f30-8387-3c06f6457da9" fk-column-ref="COL52" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL15" />
    </relationship>
    <relationship id="REL62" populated="true" UUID="2caa927d-6d5f-4be4-9901-2e1a3b8c5ad2" deferrability="7" deleteRule="3" fk-table-ref="TAB42" fkCardinality="6" identifying="false" name="pedido_item_pedido_fk" physicalName="pedido_item_pedido_fk" pk-table-ref="TAB22" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP63" populated="true" UUID="ac352201-51e0-4b9d-9f37-54f2e7e18a19" fk-column-ref="COL47" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL23" />
@@ -232,12 +232,12 @@
   <table-pane table-ref="TAB22" x="424" y="51" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB30" x="415" y="568" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB42" x="831" y="122" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB51" x="1111" y="563" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB51" x="985" y="556" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-link relationship-ref="REL56" pkConnection="0.9612403100775194" fkConnection="0.26640926640926643" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
   <table-link relationship-ref="REL62" pkConnection="0.7578947368421053" fkConnection="0.2702702702702703" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
   <table-link relationship-ref="REL58" pkConnection="0.5179856115107914" fkConnection="0.4748201438848921" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
   <table-link relationship-ref="REL64" pkConnection="0.508130081300813" fkConnection="0.49034749034749037" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
-  <table-link relationship-ref="REL60" pkConnection="0.802158273381295" fkConnection="0.3298245614035088" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL60" pkConnection="0.6834532374100719" fkConnection="0.39649122807017545" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
  </play-pen>
  <critic-manager>
   <critic-grouping platformType="Generic" enabled="true">
